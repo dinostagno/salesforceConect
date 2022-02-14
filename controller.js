@@ -35,6 +35,9 @@ function accessDataSf2() {
 function accessDataSf3() {
     const requestOptions = {
         method: 'POST',
+        headers: { 
+            'Content-Type': 'application/json'
+        },
         body: JSON.stringify({ 
             grant_type: 'password',
             client_id:  '3MVG9ZF4bs_.MKuhz4g8P5ekGrXZkNs0a2sba0CwY.6lhSXpZM4H.CM6okSQmxTiF0DMhGyMza2a_E4zfHbKn',
