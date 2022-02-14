@@ -36,7 +36,7 @@ function accessDataSf3() {
     const requestOptions = {
         method: 'POST',
         headers: { 
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/x-www-form-unlecoded'
         },
         body: JSON.stringify({ 
             grant_type: 'password',
