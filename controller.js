@@ -19,3 +19,15 @@ function accessDataSf() {
     }
     http.send(params);
 }
+function accessDataSf2() {
+    const requestOptions = {
+        method: 'POST',
+        headers: { 
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer 00D2E000000mpVn!ARIAQOqHuHVOEbUYjwAV44oDlKFb6si2f7qKTwVFIb_japx9N.y7Ugha3ZZ5MULi9suwF_TTdLx6V8LfsphqaPNUMP6eLHBw'
+        },
+        body: JSON.stringify({ Name: 'Cristian barria2' })
+    };
+    fetch('https://dinostagno-dev-ed.my.salesforce.com/services/data/v39.0/sobjects/Account/', requestOptions)
+        .then(response => response.json())
+}
