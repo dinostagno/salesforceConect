@@ -30,4 +30,5 @@ function accessDataSf2() {
     };
     fetch('https://dinostagno-dev-ed.my.salesforce.com/services/data/v39.0/sobjects/Account/', requestOptions)
         .then(response => response.json())
+        .then(data => console.log(data));
 }
