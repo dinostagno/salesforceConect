@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-md-center mt-5">
+        <div class="col col-lg-4 bg-gradient-primary">
+          <form>
+            <div class="form-group">
+              <label for="inputclient_id">client_id</label>
+              <input type="text" class="form-control" id="inputclient_id" aria-describedby="client_idhelp">
+              <small id="client_idhelp" class="form-text text-muted">favor ingresa la key</small>
+            </div>
+            <div class="form-group">
+              <label for="inputclient_secret">client_secret</label>
+              <input type="text" class="form-control" id="inputclient_secret" aria-describedby="client_secrethelp" >
+              <small id="client_secrethelp" class="form-text text-muted">favor ingresa la key</small>
+            </div>
+            <div class="form-group">
+              <label for="inputusername">username</label>
+              <input type="text" class="form-control" id="inputusername" aria-describedby="usernamehelp">
+              <small id="usernamehelp" class="form-text text-muted">favor ingresa la key</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <input id="" class="btn btn-outline-primary mt-2" type="button" onclick="accessDataSf()" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="controller.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
